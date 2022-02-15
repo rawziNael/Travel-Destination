@@ -7,9 +7,9 @@ function Footer(props) {
     return (
         <>
             <div>
-               <p>www.visitaroundworld.com</p>
-               <p>Facebook: web.facebook.com/visitaroundworld</p>
-               <p>Tele: +58 011 52458</p>
+            <a href='https://web.facebook.com/VisitPL/?_rdc=1&_rdr'>Visit Poland</a><br/>
+            <a href="https://web.facebook.com/switzerlandinarabic">switzerland in arabic</a><br/>
+            <p/>Author of the document: Rawzi Homran
             </div>
             
         </>
