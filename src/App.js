@@ -1,13 +1,22 @@
 import './App.css';
-import Home from './Components/Home'
-import data from './data.json'
+import { Routes, Route } from "react-router-dom";
+import Home from './Components/Home/Home'
+import TourDetail from './Components/TourDetail/TourDetail';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
   return (
-    <div className="App">
-      <Home data={data}/>
-    </div>
+    <>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/city/:id" element={<TourDetail />} />
+      </Routes>
+      <Footer/>
+    </>
+   
   );
 }
 
